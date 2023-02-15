@@ -50,16 +50,25 @@ img {
     padding: 0 5%;
     margin-top: calc(100vh - 200px);
   }
-  @media (max-width: 698.99px) {
+@media (max-width: 1074.99px) {
+       .text {
+        text-align: left;
+        margin: 30% auto;
+       } 
+       
+}
+
+  @media (max-width: 901.99px) {
     .text {
-      margin-top: 50%;
+      text-align: center;
+      margin: 30% auto;
+    }
+    .owl {
+        top: -50px;
+        right: 264px;
     }
   }
-  /* @media (max-width: 665.99px) {
-    .text {
-      margin-top: 50%;
-    }
-  } */
+
   .text__title {
     position: relative;
     z-index: 5;
@@ -70,16 +79,18 @@ img {
     text-shadow: 5px 5px 0px #000000;
   }
 .timer {
+        position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  gap: 10px;
+  justify-content: flex-end;
+  gap: 50px;
   padding: 0 10px;
 }
-@media (max-width: 900.99px)  {
+
+
+
+@media (max-width: 901.99px)  {
   .timer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -88,6 +99,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            gap: 100px;
   }
 }
 .timer__count {
@@ -112,8 +124,7 @@ img {
     max-width: 100%;
 
   }
-  
-  
+
   .cloud-top {
     max-width: 800px;
     position: absolute;
@@ -612,12 +623,23 @@ img {
 .heart {
   z-index: 100;
   display: inline-block;
-  width: 49px;
-  height: 44px;
+  width: 50px;
+  height: 45px;
   position: relative;
   margin-right: 25px;
+  background-image: url(../img/owl.png);
+  background-size: contain;
 }
-
+.heart__container {
+position: relative;
+}
+.owl {
+        position: absolute;
+        top: -115px;
+        right: -60px;
+        width: 200px;        
+        z-index: 3;
+}
 .heart:after {
   z-index: 100;
   content: '';
